@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Online Quiz Platform</title>
+  <link rel="stylesheet" href="app.css" />
+</head>
+<body>
+  <div class="container">
+    <div class="level-selector">
+      <label for="subject">Choose Subject:</label>
+      <select id="subject">
+        <option value="web">Web Development</option>
+        <option value="python">Python</option>
+        <option value="java">Java</option>
+      </select>
+
+      <label for="level">Choose Level:</label>
+      <select id="level">
+        <option value="easy">Easy</option>
+        <option value="medium">Medium</option>
+        <option value="hard">Hard</option>
+      </select>
+    </div>
+
+    <div id="question-container" class="hide">
+      <div id="question">Question text here</div>
+      <div id="answer-buttons" class="btn-grid"></div>
+    </div>
+
+    <div class="controls">
+      <button id="start-btn" class="start-btn btn">Start</button>
+      <button id="next-btn" class="next-btn btn hide">Next</button>
+    </div>
+  </div>
+
+  <div class="score">
+    Score: <span id="right-answers">0</span>
+  </div>
+
+  <div id="score-container" class="hide">
+    <h2>Quiz Finished!</h2>
+    <p>You got <span id="final-score">0</span> out of <span id="total-questions">0</span> correct.</p>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
